@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.583a4bbe.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.583a4bbe.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.00382b3f.chunk.js": "/portfolio/static/js/2.00382b3f.chunk.js",
+    "static/js/2.00382b3f.chunk.js.map": "/portfolio/static/js/2.00382b3f.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/portfolio/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/js/2.00382b3f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.00382b3f.chunk.js.LICENSE.txt",
+    "static/media/certificate_C.07db8160.PNG": "/portfolio/static/media/certificate_C.07db8160.PNG",
+    "static/media/certificate_CSS.f657859e.PNG": "/portfolio/static/media/certificate_CSS.f657859e.PNG",
+    "static/media/certificate_NPTEL.4216f486.PNG": "/portfolio/static/media/certificate_NPTEL.4216f486.PNG",
+    "static/media/certificate_coursera.dcbb4f7d.PNG": "/portfolio/static/media/certificate_coursera.dcbb4f7d.PNG",
+    "static/media/certificate_pointers.a2177e18.PNG": "/portfolio/static/media/certificate_pointers.a2177e18.PNG",
+    "static/media/certificate_problem_solving.486830dc.PNG": "/portfolio/static/media/certificate_problem_solving.486830dc.PNG",
+    "static/media/certificate_python.8e749b04.PNG": "/portfolio/static/media/certificate_python.8e749b04.PNG",
+    "static/media/certificate_python_hackerrank.f33855d2.PNG": "/portfolio/static/media/certificate_python_hackerrank.f33855d2.PNG",
+    "static/media/profile_pic.502e23bb.jpg": "/portfolio/static/media/profile_pic.502e23bb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bf68c44.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.00382b3f.chunk.js",
+    "static/js/main.583a4bbe.chunk.js"
+  ]
+}
