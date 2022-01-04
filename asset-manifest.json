@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a4b8e9ac.chunk.css",
-    "main.js": "/portfolio/static/js/main.abefeef2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.abefeef2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c462841e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c462841e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -20,7 +20,7 @@
     "static/media/certificate_problem_solving.486830dc.PNG": "/portfolio/static/media/certificate_problem_solving.486830dc.PNG",
     "static/media/certificate_python.8e749b04.PNG": "/portfolio/static/media/certificate_python.8e749b04.PNG",
     "static/media/certificate_python_hackerrank.f33855d2.PNG": "/portfolio/static/media/certificate_python_hackerrank.f33855d2.PNG",
-    "static/media/profile_pic.502e23bb.jpg": "/portfolio/static/media/profile_pic.502e23bb.jpg",
+    "static/media/profile_pic.55b5e26a.jpg": "/portfolio/static/media/profile_pic.55b5e26a.jpg",
     "static/media/project.00da84c6.jfif": "/portfolio/static/media/project.00da84c6.jfif",
     "static/media/project_bad.8785b5b5.PNG": "/portfolio/static/media/project_bad.8785b5b5.PNG",
     "static/media/project_custom.20b443e8.PNG": "/portfolio/static/media/project_custom.20b443e8.PNG",
@@ -32,6 +32,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.e5a2fe33.chunk.js",
     "static/css/main.a4b8e9ac.chunk.css",
-    "static/js/main.abefeef2.chunk.js"
+    "static/js/main.c462841e.chunk.js"
   ]
 }
