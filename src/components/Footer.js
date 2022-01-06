@@ -106,7 +106,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={img} className="h-6 w-6 " alt="o" />
+                <img src={img} className="h-6 w-6 " alt={name} />
               </a>
             </acronym>
           );

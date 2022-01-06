@@ -7,11 +7,11 @@ import { ThemeContext } from "../ThemeContext";
 
 const navigation = [
   { name: "Home", href: "#", current: false },
+  { name: "Skills", href: "#skills", current: false },
   { name: "Education", href: "#education", current: false },
   { name: "Experience", href: "#experience", current: false },
   { name: "Positions", href: "#por", current: false },
   { name: "Projects", href: "#works", current: false },
-  { name: "Certificates", href: "#certificates", current: false },
 ];
 
 function classNames(...classes) {

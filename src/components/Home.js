@@ -1,32 +1,25 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Typed from "react-typed";
 import DP from "../images/profile_pic.jpg";
 import { ThemeContext } from "../ThemeContext";
 
 const roles = ["Web Developer", "Competitive Programmer", "Web Designer"];
-
-const skills = [
-  {
-    category: "Frontend",
-    items: ["React JS", "HTML", "CSS", "Bootstrap", "Tailwind CSS", "API"],
-  },
-  { category: "Backend", items: ["Node JS", "PHP", "MySql", "MongoDB"] },
-  { category: "Languages", items: ["C", "C++", "Python", "JavaScript"] },
-  {
-    category: "Others",
-    items: ["Git/GitHub", "Figma", "Illustrator", "Web Designing"],
-  },
-];
+const name = "Vilay Bende".split("");
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
-  const [copy, setCopy] = useState("copy");
+  // const [copy, setCopy] = useState("copy");
   return (
     <>
       <section id="home" className="font-mono ">
         <section className="mt-4">
           <div className="flex sm:flex-row flex-col items-center">
-            <div className="ml-8 ">
+            <div
+              className="ml-8"
+              data-aos="flip-left"
+              data-aos-duration="500"
+              data-aos-easing="linear"
+            >
               <div
                 style={{
                   backgroundColor: `${
@@ -43,7 +36,19 @@ const Home = () => {
               />
             </div>
             <section className="ml-4 sm:ml-10 mb-12 sm:w-max">
-              <h1 className="font-serif text-8xl mt-12">Vilay Bende</h1>
+              <h1 className="font-serif text-8xl mt-12">
+                {name.map((letter, index) => {
+                  return (
+                    <span
+                      key={index}
+                      data-aos="fade-down"
+                      data-aos-delay={(index + 1) * 100}
+                    >
+                      {letter}
+                    </span>
+                  );
+                })}
+              </h1>
               <div>
                 <div
                   className={`h-16 mt-8 lg:mt-12 -mb-20 ml-4 -mr-4 hidden lg:block ${
@@ -57,7 +62,7 @@ const Home = () => {
               {/* <h1 className="sm:ml-4 mt-8 text-lg">
                 Hello {userName ? userName : "There"} 👋🏻
               </h1> */}
-              <div
+              {/* <div
                 className={`cursor-pointer flex items-center justify-between px-2 py-1 rounded sm:ml-4 mt-8 text-lg ${
                   theme === "light"
                     ? "bg-gray-200"
@@ -86,7 +91,7 @@ const Home = () => {
                 >
                   {copy}
                 </h1>
-              </div>
+              </div> */}
             </section>
           </div>
           <p className="px-6 sm:ml-4 w-screen sm:w-10/12 text-justify">
@@ -105,54 +110,6 @@ const Home = () => {
               "
             </span>
           </p>
-        </section>
-        <section className="mt-16">
-          <div className="flex justify-between items-center">
-            <div
-              className={`w-4 h-px ${
-                theme === "light" ? "bg-gray-900" : "bg-gray-100"
-              }`}
-            ></div>
-            <h1
-              className={`font-serif text-5xl p-2 border-2 ${
-                theme === "light" ? "border-gray-900" : "border-gray-100"
-              }`}
-            >
-              Skills
-            </h1>
-            <div
-              className={`flex-1 h-px ${
-                theme === "light" ? "bg-gray-900" : "bg-gray-100"
-              }`}
-            ></div>
-          </div>
-
-          {skills.map(({ category, items }, index) => {
-            return (
-              <div
-                key={index}
-                className={`ml-4 sm:ml-10 my-8 border-l-2 pl-4 ${
-                  theme === "light" ? "border-gray-900" : "border-white"
-                }`}
-              >
-                <h1 className="text-xl mt-4 mb-1 font-bold">{category}</h1>
-                <div className="ml-4 flex flex-wrap">
-                  {items.map((item, index) => {
-                    return (
-                      <span
-                        data-aos="fade-right"
-                        data-aos-delay={50 * (index + 1)}
-                        className="m-2 px-2 bg-indigo-600 text-white shadow py-1 bg-gradient-to-r from-indigo-600 to-indigo-700"
-                        key={index}
-                      >
-                        {item}
-                      </span>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })}
         </section>
       </section>
     </>

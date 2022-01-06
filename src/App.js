@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import {
   Home,
-  Certificates,
-  Projects,
+  Skills,
   Education,
   Experience,
   PoR,
+  Projects,
+  Certificates,
+  Contact,
   Header,
   Footer,
 } from "./components";
@@ -69,11 +71,13 @@ const App = () => {
       >
         <Header />
         <Home />
+        <Skills />
         <Education />
         <Experience />
         <PoR />
         <Projects />
         <Certificates />
+        <Contact />
         <Footer />
       </div>
     </>
