@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { ThemeContext } from "../ThemeContext";
 
 const contacts = [
@@ -20,54 +20,104 @@ const contacts = [
 ];
 
 const Contact = () => {
+  const highlightText = "Liked my portfolio? Hire Me!!".split(" ");
+  const highlightTextLength = highlightText.length;
   const { theme } = useContext(ThemeContext);
   const [copy, setCopy] = useState("copy");
+  const [current, setCurrent] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      if (current === highlightTextLength - 1) {
+        setCurrent(0);
+      } else {
+        setCurrent(current + 1);
+      }
+    }, 200);
+  }, [current, highlightTextLength]);
   return (
     <section
       id="contact"
-      className={`py-12 w-full flex flex-col items-center text-center ${
+      className={`py-12 w-full  ${
         theme === "light" ? "bg-gray-200 border" : "bg-gray-800"
       }`}
     >
-      <h1 className={`font-serif text-xl`}>Liked my portfolio? Hire Me!!</h1>
       <div
-        className={`cursor-pointer flex items-center justify-between px-2 py-1 rounded my-4 text-lg border ${
-          theme === "light" ? "border-gray-900" : "text-white border-white"
-        }`}
-        onClick={() => {
-          navigator.clipboard.writeText("vilay17bende@gmail.com");
-          setCopy("copied");
-          setTimeout(() => setCopy("copy"), 2000);
-        }}
+        className={`w-max flex flex-col space-y-4 items-center text-center mx-auto`}
       >
-        <h1 className="text-sm sm:text-md">vilay17bende@gmail.com</h1>
-
-        <h1
-          className={`text-sm ml-8 ${
-            copy === "copied" ? "text-green-600" : "text-blue-600"
-          }`}
-        >
-          {copy}
-        </h1>
-      </div>
-      <div className={`flex space-x-2`}>
-        {contacts.map(({ img, link, name }, index) => {
-          return (
-            <acronym key={name} title={name}>
-              <a
+        <div className={`w-full h-px overflow-x-hidden`}>
+          <div
+            className={`line-animation ${
+              theme === "light" ? "bg-gray-900" : "bg-white"
+            }`}
+          ></div>
+        </div>
+        <h1 className={`font-serif text-xl space-x-1 font-semibold`}>
+          {/* {highlightText.map((character, index) => {
+            return (
+              <span
                 key={index}
-                className={`h-10 w-10 rounded-full flex justify-center items-center bg-white mx-1 hover:bg-indigo-300 ${
-                  theme === "light" ? "text-gray-900" : ""
+                className={`${
+                  index === current ? "text-indigo-500 " : "text-current"
                 }`}
-                href={link}
-                target="_blank"
-                rel="noreferrer"
               >
-                <img src={img} className="h-8 w-8 " alt={name} />
-              </a>
-            </acronym>
-          );
-        })}
+                {character}
+              </span>
+            );
+          })} */}
+          Liked my portfolio?{" "}
+          <span className={`text-indigo-500`}>Hire Me!!</span>
+        </h1>
+
+        <div
+          className={`cursor-pointer w-full flex items-center justify-between px-2 py-1 rounded text-lg border ${
+            theme === "light" ? "border-gray-900" : "text-white border-white"
+          }`}
+          onClick={() => {
+            navigator.clipboard.writeText("vilay17bende@gmail.com");
+            setCopy("copied");
+            setTimeout(() => setCopy("copy"), 2000);
+          }}
+        >
+          <h1 className="text-sm sm:text-md ">vilay17bende@gmail.com</h1>
+
+          <h1
+            className={`text-sm ml-8 ${
+              copy === "copied" ? "text-green-600" : "text-blue-600"
+            }`}
+          >
+            {copy}
+          </h1>
+        </div>
+        <div className={`flex space-x-2`}>
+          {contacts.map(({ img, link, name }, index) => {
+            return (
+              <acronym key={name} title={name}>
+                <a
+                  key={index}
+                  className={`h-10 w-10 rounded-full flex justify-center items-center bg-white mx-1 hover:bg-indigo-300 ${
+                    theme === "light" ? "text-gray-900" : ""
+                  }`}
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={img} className="h-8 w-8 " alt={name} />
+                </a>
+              </acronym>
+            );
+          })}
+        </div>
+        <div className={`w-full h-px overflow-x-hidden`}>
+          <div
+            className={`line-animation line-animation-reverse ${
+              theme === "light" ? "bg-gray-900" : "bg-white"
+            }`}
+          ></div>
+        </div>
+        {/* <h1 className="">
+          <span className="text-lg">&#9400;</span> {new Date().getFullYear()}{" "}
+          Vilay Bende
+        </h1> */}
       </div>
     </section>
   );
