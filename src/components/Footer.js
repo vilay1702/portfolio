@@ -5,7 +5,7 @@ const footerNav = [
   {
     name: "vilay17bende@gmail.com",
     img: "https://img.icons8.com/material-sharp/24/000000/mail.png",
-    link: "https://mail.google.com/mail/u/0/#inbox",
+    link: "#contact",
   },
   {
     name: "LinkedIn",
@@ -103,7 +103,7 @@ const Footer = () => {
                   theme === "light" ? "text-gray-900" : "bg-white"
                 }`}
                 href={link}
-                target="_blank"
+                target={link === "#contact" ? "_self" : "_blank"}
                 rel="noreferrer"
               >
                 <img src={img} className="h-6 w-6 " alt={name} />
