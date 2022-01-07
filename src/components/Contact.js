@@ -3,19 +3,22 @@ import { ThemeContext } from "../ThemeContext";
 
 const contacts = [
   {
-    name: "instagram",
+    name: "Instagram",
     img: "https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png",
     link: "https://www.instagram.com/_vilay.b_/",
+    color: "bg-pink-600 hover:bg-pink-700",
   },
   {
     name: "LinkedIn",
     img: "https://img.icons8.com/ios-glyphs/30/000000/linkedin.png",
     link: "https://www.linkedin.com/in/vilaybende/",
+    color: "bg-blue-500 hover:bg-blue-600",
   },
   {
     name: "Twitter",
     img: "https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png",
     link: "https://twitter.com/bendevilay",
+    color: "bg-blue-400 hover:bg-blue-600",
   },
 ];
 
@@ -89,14 +92,12 @@ const Contact = () => {
           </h1>
         </div>
         <div className={`flex space-x-2`}>
-          {contacts.map(({ img, link, name }, index) => {
+          {contacts.map(({ img, link, name, color }, index) => {
             return (
               <acronym key={name} title={name}>
                 <a
                   key={index}
-                  className={`h-10 w-10 rounded-full flex justify-center items-center bg-white mx-1 hover:bg-indigo-300 ${
-                    theme === "light" ? "text-gray-900" : ""
-                  }`}
+                  className={`h-10 w-10 rounded-full flex justify-center items-center mx-1 ${color}`}
                   href={link}
                   target="_blank"
                   rel="noreferrer"
