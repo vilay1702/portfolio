@@ -49,13 +49,14 @@ const Home = () => {
                   );
                 })}
               </h1>
-              <div>
+              <h3 className="sm:ml-4 text-sm mt-6">I am a</h3>
+              <div className="mt-2 lg:mt-6">
                 <div
-                  className={`h-16 mt-8 lg:mt-12 -mb-20 ml-4 -mr-4 hidden lg:block ${
+                  className={`h-16 -mb-20 ml-4 -mr-4 hidden lg:block ${
                     theme === "light" ? "bg-gray-800" : "bg-gray-700"
                   }`}
                 ></div>
-                <h1 className=" h-16 mt-8 lg:mt-0 text-xl sm:text-2xl text-white font-bold bg-gradient-to-r from-indigo-700 to-indigo-500 p-4 ">
+                <h1 className=" h-16 lg:mt-0 text-xl sm:text-2xl text-white font-bold bg-gradient-to-r from-indigo-700 to-indigo-500 p-4 ">
                   <Typed strings={roles} typeSpeed={40} backSpeed={30} loop />
                 </h1>
               </div>
