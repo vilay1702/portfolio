@@ -5,7 +5,7 @@ const footerNav = [
   {
     name: "vilay17bende@gmail.com",
     img: "https://img.icons8.com/material-sharp/24/000000/mail.png",
-    link: "#contact",
+    link: "mailto:vilay17bende@gmail.com",
   },
   {
     name: "LinkedIn",
