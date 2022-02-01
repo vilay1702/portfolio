@@ -6,19 +6,19 @@ const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
     if (theme === "light") {
-      localStorage.theme = "dark";
+      localStorage.themeVilayPortfolio = "dark";
       setTheme("dark");
     } else {
-      localStorage.theme = "light";
+      localStorage.themeVilayPortfolio = "light";
       setTheme("light");
     }
   };
 
   useEffect(() => {
-    if (!localStorage.theme) {
+    if (!localStorage.themeVilayPortfolio) {
       localStorage.theme = "light";
     }
-    setTheme(localStorage.theme);
+    setTheme(localStorage.themeVilayPortfolio);
   }, []);
 
   return (
