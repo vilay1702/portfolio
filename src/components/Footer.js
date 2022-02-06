@@ -99,7 +99,7 @@ const Footer = () => {
             <acronym key={name} title={name}>
               <a
                 key={index}
-                className={`h-8 w-8 rounded-full flex justify-center items-center hover:bg-indigo-300 mx-1 ${
+                className={`transition-all duration-300 ease-in-out h-8 w-8 rounded-full flex justify-center items-center hover:bg-indigo-300 mx-1 ${
                   theme === "light" ? "text-gray-900" : "bg-white"
                 }`}
                 href={link}

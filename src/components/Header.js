@@ -54,7 +54,7 @@ export default function Header() {
                         href={item.href}
                         key={item.name}
                         className={classNames(
-                          `px-3 py-2 rounded-md text-md font-mono font-medium ${
+                          `px-3 py-2 rounded-md text-md font-mono font-medium transition-all duration-300 ease-in-out ${
                             theme === "light"
                               ? "text-gray-900 hover:bg-gray-200"
                               : "text-white hover:bg-gray-700"
@@ -83,7 +83,7 @@ export default function Header() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    `block px-3 py-2 rounded-md text-md font-medium ${
+                    `transition-all duration-300 ease-in-out block px-3 py-2 rounded-md text-md font-medium ${
                       theme === "light" ? "text-gray-900" : "text-white"
                     } `
                   )}

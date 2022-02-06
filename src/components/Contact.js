@@ -97,7 +97,7 @@ const Contact = () => {
               <acronym key={name} title={name}>
                 <a
                   key={index}
-                  className={`h-10 w-10 rounded-full flex justify-center items-center mx-1 ${color}`}
+                  className={`transition-all duration-300 ease-in-out h-10 w-10 rounded-full flex justify-center items-center mx-1 ${color}`}
                   href={link}
                   target="_blank"
                   rel="noreferrer"

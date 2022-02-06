@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Carousel = ({ arr }) => {
   const [current, setCurrent] = useState(0);
+  setInterval(() => {}, 5000);
   return (
     <section className="my-8">
       <section className="mx-auto items-center flex  md:w-7/12 w-11/12">
@@ -24,13 +25,17 @@ const Carousel = ({ arr }) => {
             />
           </svg>
         </p>
-        <div>
+        <div className="">
           {arr.map((img, index) => {
             return (
               <img
                 key={index}
-                className={`w-full object-cover object-center 
-                  ${index === current ? "block" : " hidden"}`}
+                className={`object-cover object-center transition-all duration-500 ease-in 
+                  ${
+                    index === current
+                      ? "w-full h-full visible opacity-100"
+                      : "w-0 h-0 invisible opacity-0 "
+                  }`}
                 src={img}
                 alt="img"
               />
