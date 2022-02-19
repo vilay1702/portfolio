@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import bad from "../images/project_bad.PNG";
-import project from "../images/project.jfif";
-import githubUsers from "../images/project_github.jfif";
-import reduxCart from "../images/project_redux.jfif";
-import custom from "../images/project_custom.PNG";
+import bad from "../images/project_bad.png";
+import project from "../images/project.png";
+import githubUsers from "../images/project_github.png";
+import reduxCart from "../images/project_redux.png";
+import custom from "../images/project_custom.png";
 import { ThemeContext } from "../ThemeContext";
 
 const projectsList = [
@@ -63,7 +63,7 @@ const Card = ({ name, techStack, code, live, img }, index) => {
 
       <div className="relative px-4 -mt-16 ">
         <div
-          className={`py-4 px-6 rounded-lg flex flex-col items-center justify-between shadow-md h-56 hover:scale-125 ${
+          className={`py-4 px-6 rounded-lg flex flex-col items-center justify-between shadow-md h-56  ${
             theme === "light" ? "bg-white" : "bg-gray-900"
           }`}
         >

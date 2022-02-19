@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Typed from "react-typed";
-import DP from "../images/profile_pic.jpg";
+import DP from "../images/profile_pic.png";
 import { ThemeContext } from "../ThemeContext";
 
 const roles = ["Web Developer", "Competitive Programmer", "Web Designer"];
@@ -8,7 +8,6 @@ const name = "Vilay Bende".split("");
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
-  // const [copy, setCopy] = useState("copy");
   return (
     <>
       <section id="home" className="font-mono ">
@@ -60,39 +59,6 @@ const Home = () => {
                   <Typed strings={roles} typeSpeed={40} backSpeed={30} loop />
                 </h1>
               </div>
-              {/* <h1 className="sm:ml-4 mt-8 text-lg">
-                Hello {userName ? userName : "There"} 👋🏻
-              </h1> */}
-              {/* <div
-                className={`cursor-pointer flex items-center justify-between px-2 py-1 rounded sm:ml-4 mt-8 text-lg ${
-                  theme === "light"
-                    ? "bg-gray-200"
-                    : "bg-gray-100 text-gray-900"
-                }`}
-                onClick={() => {
-                  navigator.clipboard.writeText("vilay17bende@gmail.com");
-                  setCopy("copied");
-                  setTimeout(() => setCopy("copy"), 2000);
-                }}
-              >
-                <div className="flex items-center ">
-                  <img
-                    className="sm:w-6 w-4"
-                    src="https://img.icons8.com/material-outlined/30/000000/new-post.png"
-                    alt="M"
-                  />
-                  <h1 className="px-1 text-sm sm:text-md">
-                    vilay17bende@gmail.com
-                  </h1>
-                </div>
-                <h1
-                  className={`text-sm ${
-                    copy === "copied" ? "text-green-600" : "text-blue-600"
-                  }`}
-                >
-                  {copy}
-                </h1>
-              </div> */}
             </section>
           </div>
           <p className="px-6 sm:ml-4 w-screen sm:w-10/12 text-justify">

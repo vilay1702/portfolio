@@ -1,26 +1,14 @@
 import React, { useContext } from "react";
-import a from "../images/certificate_NPTEL.PNG";
-import b from "../images/certificate_problem_solving.PNG";
-import c from "../images/certificate_python_hackerrank.PNG";
-import d from "../images/certificate_pointers.PNG";
-import e from "../images/certificate_python.PNG";
-import f from "../images/certificate_coursera.PNG";
-import g from "../images/certificate_CSS.PNG";
-import h from "../images/certificate_C.PNG";
+import a from "../images/certificate_NPTEL.png";
+import b from "../images/certificate_problem_solving.png";
+import c from "../images/certificate_python_hackerrank.png";
+import d from "../images/certificate_pointers.png";
+import e from "../images/certificate_python.png";
+import f from "../images/certificate_coursera.png";
+import g from "../images/certificate_CSS.png";
+import h from "../images/certificate_C.png";
 import Carousel from "./Carousel";
 import { ThemeContext } from "../ThemeContext";
-
-// const Card = ({ data, id }) => {
-//   return (
-//     <img
-//       data-aos="fade-up"
-//       className="shadow-lg w-80 m-6"
-//       key={id}
-//       src={data}
-//       alt="certificate"
-//     />
-//   );
-// };
 
 const certificates = [a, b, c, d, e, f, g, h];
 
@@ -50,11 +38,6 @@ const Certificates = () => {
           ></div>
         </div>
       </section>
-      {/* <div className=" flex sm:justify-start justify-center flex-wrap items-start">
-        {certificates.map((data, index) => {
-          return <Card data={data} id={index} />;
-        })}
-      </div> */}
       <Carousel arr={certificates} />
     </section>
   );
