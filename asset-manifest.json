@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.64de642a.chunk.css",
-    "main.js": "/portfolio/static/js/main.f18ea3a0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f18ea3a0.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.5e5c2aa4.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5e5c2aa4.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -12,26 +12,25 @@
     "static/css/2.7fc9bc2b.chunk.css.map": "/portfolio/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.64de642a.chunk.css.map": "/portfolio/static/css/main.64de642a.chunk.css.map",
     "static/js/2.63b7d2f2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.63b7d2f2.chunk.js.LICENSE.txt",
-    "static/media/certificate_C.07db8160.PNG": "/portfolio/static/media/certificate_C.07db8160.PNG",
-    "static/media/certificate_CSS.f657859e.PNG": "/portfolio/static/media/certificate_CSS.f657859e.PNG",
-    "static/media/certificate_NPTEL.4216f486.PNG": "/portfolio/static/media/certificate_NPTEL.4216f486.PNG",
-    "static/media/certificate_coursera.dcbb4f7d.PNG": "/portfolio/static/media/certificate_coursera.dcbb4f7d.PNG",
-    "static/media/certificate_pointers.a2177e18.PNG": "/portfolio/static/media/certificate_pointers.a2177e18.PNG",
-    "static/media/certificate_problem_solving.486830dc.PNG": "/portfolio/static/media/certificate_problem_solving.486830dc.PNG",
-    "static/media/certificate_python.8e749b04.PNG": "/portfolio/static/media/certificate_python.8e749b04.PNG",
-    "static/media/certificate_python_hackerrank.f33855d2.PNG": "/portfolio/static/media/certificate_python_hackerrank.f33855d2.PNG",
-    "static/media/profile_pic.55b5e26a.jpg": "/portfolio/static/media/profile_pic.55b5e26a.jpg",
-    "static/media/project.00da84c6.jfif": "/portfolio/static/media/project.00da84c6.jfif",
-    "static/media/project_bad.8785b5b5.PNG": "/portfolio/static/media/project_bad.8785b5b5.PNG",
-    "static/media/project_custom.20b443e8.PNG": "/portfolio/static/media/project_custom.20b443e8.PNG",
-    "static/media/project_github.f04a7ddc.jfif": "/portfolio/static/media/project_github.f04a7ddc.jfif",
-    "static/media/project_redux.5fc73e9c.jfif": "/portfolio/static/media/project_redux.5fc73e9c.jfif"
+    "static/media/certificate_C.07db8160.png": "/portfolio/static/media/certificate_C.07db8160.png",
+    "static/media/certificate_CSS.f657859e.png": "/portfolio/static/media/certificate_CSS.f657859e.png",
+    "static/media/certificate_NPTEL.4216f486.png": "/portfolio/static/media/certificate_NPTEL.4216f486.png",
+    "static/media/certificate_coursera.dcbb4f7d.png": "/portfolio/static/media/certificate_coursera.dcbb4f7d.png",
+    "static/media/certificate_pointers.a2177e18.png": "/portfolio/static/media/certificate_pointers.a2177e18.png",
+    "static/media/certificate_problem_solving.486830dc.png": "/portfolio/static/media/certificate_problem_solving.486830dc.png",
+    "static/media/certificate_python.8e749b04.png": "/portfolio/static/media/certificate_python.8e749b04.png",
+    "static/media/certificate_python_hackerrank.f33855d2.png": "/portfolio/static/media/certificate_python_hackerrank.f33855d2.png",
+    "static/media/profile_pic.55b5e26a.png": "/portfolio/static/media/profile_pic.55b5e26a.png",
+    "static/media/project_bad.8785b5b5.png": "/portfolio/static/media/project_bad.8785b5b5.png",
+    "static/media/project_custom.20b443e8.png": "/portfolio/static/media/project_custom.20b443e8.png",
+    "static/media/project_github.f04a7ddc.png": "/portfolio/static/media/project_github.f04a7ddc.png",
+    "static/media/project_redux.5fc73e9c.png": "/portfolio/static/media/project_redux.5fc73e9c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0bf68c44.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.63b7d2f2.chunk.js",
     "static/css/main.64de642a.chunk.css",
-    "static/js/main.f18ea3a0.chunk.js"
+    "static/js/main.5e5c2aa4.chunk.js"
   ]
 }
