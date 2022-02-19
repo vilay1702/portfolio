@@ -56,7 +56,11 @@ const Contact = () => {
         </div>
         <h1 className={`font-serif text-xl space-x-1 font-semibold`}>
           Liked my portfolio?{" "}
-          <span className={`text-indigo-500`}>Hire Me!!</span>
+          <span
+            className={theme === "light" ? "text-blue-600" : "text-blue-400"}
+          >
+            Hire Me!!
+          </span>
         </h1>
 
         <div
@@ -73,7 +77,11 @@ const Contact = () => {
 
           <h1
             className={`text-sm ml-8 ${
-              copy === "copied" ? "text-green-600" : "text-blue-600"
+              copy === "copied"
+                ? "text-green-600"
+                : theme === "light"
+                ? "text-blue-600"
+                : "text-blue-400"
             }`}
           >
             {copy}
