@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import bad from "../images/project_bad.png";
-import project from "../images/project.png";
-import githubUsers from "../images/project_github.png";
-import reduxCart from "../images/project_redux.png";
-import custom from "../images/project_custom.png";
+import bad from "../images/project_bad.WebP";
+import project from "../images/project.WebP";
+import githubUsers from "../images/project_github.WebP";
+import reduxCart from "../images/project_redux.WebP";
+import custom from "../images/project_custom.WebP";
 import { ThemeContext } from "../ThemeContext";
 
 const projectsList = [

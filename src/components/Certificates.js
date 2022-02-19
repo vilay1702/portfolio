@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import a from "../images/certificate_NPTEL.png";
-import b from "../images/certificate_problem_solving.png";
-import c from "../images/certificate_python_hackerrank.png";
-import d from "../images/certificate_pointers.png";
-import e from "../images/certificate_python.png";
-import f from "../images/certificate_coursera.png";
-import g from "../images/certificate_CSS.png";
-import h from "../images/certificate_C.png";
+import a from "../images/certificate_NPTEL.WebP";
+import b from "../images/certificate_problem_solving.WebP";
+import c from "../images/certificate_python_hackerrank.WebP";
+import d from "../images/certificate_pointers.WebP";
+import e from "../images/certificate_python.WebP";
+import f from "../images/certificate_coursera.WebP";
+import g from "../images/certificate_CSS.WebP";
+import h from "../images/certificate_C.WebP";
 import Carousel from "./Carousel";
 import { ThemeContext } from "../ThemeContext";
 
