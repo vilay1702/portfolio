@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.64de642a.chunk.css",
-    "main.js": "/portfolio/static/js/main.5e5c2aa4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5e5c2aa4.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.5c998abd.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5c998abd.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -12,17 +12,17 @@
     "static/css/2.7fc9bc2b.chunk.css.map": "/portfolio/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.64de642a.chunk.css.map": "/portfolio/static/css/main.64de642a.chunk.css.map",
     "static/js/2.63b7d2f2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.63b7d2f2.chunk.js.LICENSE.txt",
-    "static/media/certificate_C.07db8160.png": "/portfolio/static/media/certificate_C.07db8160.png",
-    "static/media/certificate_CSS.f657859e.png": "/portfolio/static/media/certificate_CSS.f657859e.png",
-    "static/media/certificate_NPTEL.4216f486.png": "/portfolio/static/media/certificate_NPTEL.4216f486.png",
-    "static/media/certificate_coursera.dcbb4f7d.png": "/portfolio/static/media/certificate_coursera.dcbb4f7d.png",
-    "static/media/certificate_pointers.a2177e18.png": "/portfolio/static/media/certificate_pointers.a2177e18.png",
-    "static/media/certificate_problem_solving.486830dc.png": "/portfolio/static/media/certificate_problem_solving.486830dc.png",
-    "static/media/certificate_python.8e749b04.png": "/portfolio/static/media/certificate_python.8e749b04.png",
-    "static/media/certificate_python_hackerrank.f33855d2.png": "/portfolio/static/media/certificate_python_hackerrank.f33855d2.png",
-    "static/media/profile_pic.55b5e26a.png": "/portfolio/static/media/profile_pic.55b5e26a.png",
-    "static/media/project_bad.8785b5b5.png": "/portfolio/static/media/project_bad.8785b5b5.png",
-    "static/media/project_custom.20b443e8.png": "/portfolio/static/media/project_custom.20b443e8.png",
+    "static/media/certificate_C.ae6fe93d.png": "/portfolio/static/media/certificate_C.ae6fe93d.png",
+    "static/media/certificate_CSS.d19cd2b8.png": "/portfolio/static/media/certificate_CSS.d19cd2b8.png",
+    "static/media/certificate_NPTEL.2196d13a.png": "/portfolio/static/media/certificate_NPTEL.2196d13a.png",
+    "static/media/certificate_coursera.da2b8b28.png": "/portfolio/static/media/certificate_coursera.da2b8b28.png",
+    "static/media/certificate_pointers.18067d26.png": "/portfolio/static/media/certificate_pointers.18067d26.png",
+    "static/media/certificate_problem_solving.08d29e9f.png": "/portfolio/static/media/certificate_problem_solving.08d29e9f.png",
+    "static/media/certificate_python.79112c35.png": "/portfolio/static/media/certificate_python.79112c35.png",
+    "static/media/certificate_python_hackerrank.54832d7f.png": "/portfolio/static/media/certificate_python_hackerrank.54832d7f.png",
+    "static/media/profile_pic.bddef1e1.png": "/portfolio/static/media/profile_pic.bddef1e1.png",
+    "static/media/project_bad.7f410b06.png": "/portfolio/static/media/project_bad.7f410b06.png",
+    "static/media/project_custom.85ae5073.png": "/portfolio/static/media/project_custom.85ae5073.png",
     "static/media/project_github.f04a7ddc.png": "/portfolio/static/media/project_github.f04a7ddc.png",
     "static/media/project_redux.5fc73e9c.png": "/portfolio/static/media/project_redux.5fc73e9c.png"
   },
@@ -31,6 +31,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.63b7d2f2.chunk.js",
     "static/css/main.64de642a.chunk.css",
-    "static/js/main.5e5c2aa4.chunk.js"
+    "static/js/main.5c998abd.chunk.js"
   ]
 }
