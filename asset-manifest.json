@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.64de642a.chunk.css",
-    "main.js": "/portfolio/static/js/main.354f8b94.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.354f8b94.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1d38b133.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1d38b133.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -25,6 +25,7 @@
     "static/media/project_bad.7f410b06.WebP": "/portfolio/static/media/project_bad.7f410b06.WebP",
     "static/media/project_custom.85ae5073.WebP": "/portfolio/static/media/project_custom.85ae5073.WebP",
     "static/media/project_github.f04a7ddc.WebP": "/portfolio/static/media/project_github.f04a7ddc.WebP",
+    "static/media/project_ollivanders.96df65e7.png": "/portfolio/static/media/project_ollivanders.96df65e7.png",
     "static/media/project_redux.5fc73e9c.WebP": "/portfolio/static/media/project_redux.5fc73e9c.WebP"
   },
   "entrypoints": [
@@ -32,6 +33,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.63b7d2f2.chunk.js",
     "static/css/main.64de642a.chunk.css",
-    "static/js/main.354f8b94.chunk.js"
+    "static/js/main.1d38b133.chunk.js"
   ]
 }
