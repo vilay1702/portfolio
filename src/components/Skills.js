@@ -1,18 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
-
-const skills = [
-  {
-    category: "Frontend",
-    items: ["React JS", "HTML", "CSS", "Bootstrap", "Tailwind CSS", "API"],
-  },
-  { category: "Backend", items: ["Node JS", "PHP", "MySql", "MongoDB"] },
-  { category: "Languages", items: ["C", "C++", "Python", "JavaScript"] },
-  {
-    category: "Others",
-    items: ["Git/GitHub", "Figma", "Illustrator", "Web Designing"],
-  },
-];
+import { skills } from "../data";
 
 const Skills = () => {
   const { theme } = useContext(ThemeContext);

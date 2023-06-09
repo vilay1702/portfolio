@@ -1,24 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
-
-const education = [
-  {
-    university: "Medi-Caps University",
-    course: "B.Tech CS",
-    cgpa: "9.34/10",
-    percentage: null,
-    year: "2019-2023",
-    place: "Indore, India",
-  },
-  {
-    university: "First Step Sr Secondary School",
-    course: "HSC, Science",
-    cgpa: null,
-    percentage: "85%",
-    year: "2018-2019",
-    place: "Chhindwara, India",
-  },
-];
+import { education } from "../data";
 
 const Card = ({ data }) => {
   const { theme } = useContext(ThemeContext);

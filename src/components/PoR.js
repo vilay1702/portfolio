@@ -1,22 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
-
-const por = [
-  {
-    role: "Web Developer, Graphic Designer",
-    oranisation: "Incubation Cell, Medi-Caps University",
-    duration: "Oct'20 - present",
-    experience:
-      "Worked in Web Development and Graphic Designing team.Working on MIIC website.Led a team to produce UX/UI designs and posters for website and events",
-  },
-  {
-    role: "Chapter Lead",
-    oranisation: "CodeChef College Chapter",
-    duration: "May'20 - June'21",
-    experience:
-      "Established first-ever active competitive programming club on my campus.Guided 250+ students to get started with Competitve Programming, took doubt session organised coding contests and workshops ",
-  },
-];
+import { por } from "../data";
 
 const Card = ({ data }) => {
   const { theme } = useContext(ThemeContext);

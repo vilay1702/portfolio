@@ -1,21 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
-
-const experience = [
-  {
-    role: "Web Developer Intern",
-    oranisation: "Descrii.tech",
-    duration: "Nov'21 - Mar'22",
-    experience:
-      "Worked as a Shopify Developer and developed Shopify Apps.Worked on MERN stack, Shopify API, Shopify Polaris",
-  },
-  {
-    role: "Software Developer Intern",
-    oranisation: "MADIEE Games",
-    duration: "July'21 - Sept'21",
-    experience: "Worked on React JS.Developed UI for web games",
-  },
-];
+import { experience } from "../data";
 
 const Card = ({ data }) => {
   const { theme } = useContext(ThemeContext);

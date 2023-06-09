@@ -1,48 +1,7 @@
 import React, { useContext } from "react";
-import bad from "../images/project_bad.WebP";
 import project from "../images/project.WebP";
-import githubUsers from "../images/project_github.WebP";
-import reduxCart from "../images/project_redux.WebP";
-import custom from "../images/project_custom.WebP";
 import { ThemeContext } from "../ThemeContext";
-
-const projectsList = [
-  {
-    name: "Github Users",
-    techStack: ["React", "Javascript", "HTML", "CSS", "API"],
-    code: "https://github.com/vilay1702/github-users",
-    live: "https://vilay1702.github.io/github-users/",
-    img: githubUsers,
-  },
-  {
-    name: "Redux Cart",
-    techStack: ["React", "Redux", "Javascript", "HTML", "CSS", "API"],
-    code: "https://github.com/vilay1702/redux-cart",
-    live: "https://vilay1702.github.io/redux-cart/",
-    img: reduxCart,
-  },
-  {
-    name: "Breaking Bad Characters",
-    techStack: ["React", "Javascript", "HTML", "CSS", "API"],
-    code: "https://github.com/vilay1702/breakingBadCharacters",
-    live: "https://breakingbadbyvilay.netlify.app/",
-    img: bad,
-  },
-  {
-    name: "Notes App",
-    techStack: ["PHP", "Javascript", "HTML", "CSS", "MySQL"],
-    code: "https://github.com/vilay1702/NotesApp",
-    live: null,
-    img: null,
-  },
-  {
-    name: "Custom Resume Page",
-    techStack: ["HTML", "SASS", "React Js"],
-    code: "https://github.com/vilay1702/custom-resume-page",
-    live: "https://vilay1702.github.io/custom-resume-page/",
-    img: custom,
-  },
-];
+import { projectsList } from "../data";
 
 const Card = ({ name, techStack, code, live, img }, index) => {
   const { theme } = useContext(ThemeContext);
