@@ -65,12 +65,19 @@ const Home = () => {
             <span className="font-mono text-indigo-600 font-bold text-4xl mx-4">
               "
             </span>
-            I am a Btech undergrad, a Web Developer and a Graphic Designer. I
-            love to design and build websites. I am also interested in
-            Competitive Programming and learning Data Structures & Algorithms.
-            Aimed to build something creative, unique, and useful using my
-            skills.
+            As a full-stack web developer, I have a solid foundation in
+            front-end technologies like React.js, back-end technologies like
+            Node.js and Express.js, and databases like MongoDB and SQL. With
+            internships at startups, I have hands-on experience in developing
+            user interfaces and have worked as a Shopify developer, building
+            Shopify apps. I have also completed projects on the MERN stack,
+            showcasing my skills in building end-to-end web applications.
+            Proficient in programming languages like C++, Python, and
+            JavaScript, I am skilled in version control using Git.
             <br />
+            As a team player with problem solving abilities, I am committed to
+            delivering high-quality results and contributing to the success of
+            any project.
             <br />
             Actively looking to work on real world projects.
             <span className="font-mono text-indigo-600 font-bold text-4xl mx-4">

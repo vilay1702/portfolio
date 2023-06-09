@@ -2,6 +2,7 @@ import bad from "./images/project_bad.WebP";
 import githubUsers from "./images/project_github.WebP";
 import reduxCart from "./images/project_redux.WebP";
 import custom from "./images/project_custom.WebP";
+import ollivanders from "./images/project_ollivanders.png";
 
 // Education
 export const education = [
@@ -36,12 +37,20 @@ export const experience = [
     role: "Software Developer Intern",
     oranisation: "MADIEE Games",
     duration: "July'21 - Sept'21",
-    experience: "Worked on React JS.Developed UI for web games",
+    experience:
+      "Responsible for developing engaging User Interface(UI) for web-based games.Worked on React JS",
   },
 ];
 
 // Projects
 export const projectsList = [
+  {
+    name: "Ollivanders",
+    techStack: ["React Js", "Node Js", "MongoDB", "Express Js", "JavaScript"],
+    code: "https://ollivanders.vercel.app/",
+    live: "https://ollivanders.vercel.app/",
+    img: ollivanders,
+  },
   {
     name: "Github Users",
     techStack: ["React", "Javascript", "HTML", "CSS", "API"],
