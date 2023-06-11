@@ -1,4 +1,4 @@
-import bad from "./images/project_bad.WebP";
+import landingPage from "./images/project_landing_page.png";
 import githubUsers from "./images/project_github.WebP";
 import reduxCart from "./images/project_redux.WebP";
 import custom from "./images/project_custom.WebP";
@@ -60,17 +60,31 @@ export const projectsList = [
   },
   {
     name: "Redux Cart",
-    techStack: ["React", "Redux", "Javascript", "HTML", "CSS", "API"],
+    techStack: ["React", "Redux", "Javascript", "Tailwind CSS", "HTML"],
     code: "https://github.com/vilay1702/redux-cart",
     live: "https://vilay1702.github.io/redux-cart/",
     img: reduxCart,
   },
+  // {
+  //   name: "Breaking Bad Characters",
+  //   techStack: ["React", "Javascript", "HTML", "CSS", "API"],
+  //   code: "https://github.com/vilay1702/breakingBadCharacters",
+  //   live: "https://breakingbadbyvilay.netlify.app/",
+  //   img: bad,
+  // },
   {
-    name: "Breaking Bad Characters",
-    techStack: ["React", "Javascript", "HTML", "CSS", "API"],
-    code: "https://github.com/vilay1702/breakingBadCharacters",
-    live: "https://breakingbadbyvilay.netlify.app/",
-    img: bad,
+    name: "Demo Portfolio",
+    techStack: ["HTML", "SASS", "React Js"],
+    code: "https://github.com/vilay1702/custom-resume-page",
+    live: "https://vilay1702.github.io/custom-resume-page/",
+    img: custom,
+  },
+  {
+    name: "Landing Page",
+    techStack: ["HTML", "CSS"],
+    code: "https://github.com/vilay1702/developer-portfolio-challenge",
+    live: "https://vilay1702.github.io/developer-portfolio-challenge/",
+    img: landingPage,
   },
   {
     name: "Notes App",
@@ -78,13 +92,6 @@ export const projectsList = [
     code: "https://github.com/vilay1702/NotesApp",
     live: null,
     img: null,
-  },
-  {
-    name: "Custom Resume Page",
-    techStack: ["HTML", "SASS", "React Js"],
-    code: "https://github.com/vilay1702/custom-resume-page",
-    live: "https://vilay1702.github.io/custom-resume-page/",
-    img: custom,
   },
 ];
 
