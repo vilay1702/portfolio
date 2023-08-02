@@ -23,7 +23,7 @@ const App = () => {
       <div
         className={
           theme === "light"
-            ? "bg-white text-gray-900"
+            ? "bg-slate-50 text-gray-900"
             : "bg-gray-900 text-white"
         }
       >

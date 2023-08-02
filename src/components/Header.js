@@ -32,7 +32,7 @@ export default function Header() {
     <Disclosure
       as="nav"
       className={`z-50 sticky top-0 + ${
-        theme === "light" ? "bg-white" : "bg-gray-900"
+        theme === "light" ? "bg-slate-50" : "bg-gray-900"
       }
       `}
     >

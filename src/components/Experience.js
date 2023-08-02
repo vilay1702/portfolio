@@ -88,7 +88,7 @@ const Experience = () => {
             }`}
           ></div>
         </div>
-        <div className="sm:ml-4 flex justify-start flex-wrap items-start">
+        <div className="sm:ml-4 my-6 flex justify-start flex-wrap items-start">
           {experience.map((data, index) => {
             return <Card data={data} key={index} />;
           })}

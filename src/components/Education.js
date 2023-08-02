@@ -63,7 +63,7 @@ const Education = () => {
               }`}
             ></div>
           </div>
-          <div className="sm:ml-4 flex flex-col justify-start flex-wrap items-start">
+          <div className="sm:ml-4 my-6 flex flex-col justify-start flex-wrap items-start">
             {education.map((data, index) => {
               return <Card key={index} data={data} />;
             })}

@@ -3,12 +3,6 @@ import { ThemeContext } from "../ThemeContext";
 
 const contacts = [
   {
-    name: "Instagram",
-    icon: "fab fa-instagram",
-    link: "https://www.instagram.com/_vilay.b_/",
-    color: "bg-pink-600 hover:bg-pink-800",
-  },
-  {
     name: "LinkedIn",
     icon: "fab fa-linkedin-in",
     link: "https://www.linkedin.com/in/vilaybende/",
@@ -19,6 +13,12 @@ const contacts = [
     icon: "fab fa-twitter",
     link: "https://twitter.com/bendevilay",
     color: "bg-blue-400 hover:bg-blue-600",
+  },
+  {
+    name: "Instagram",
+    icon: "fab fa-instagram",
+    link: "https://www.instagram.com/vilay_bende/",
+    color: "bg-pink-600 hover:bg-pink-800",
   },
 ];
 

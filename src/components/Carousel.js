@@ -33,7 +33,7 @@ const Carousel = ({ arr }) => {
                 className={`object-cover object-center transition-all duration-500 ease-in 
                   ${
                     index === current
-                      ? "w-full h-full visible opacity-100"
+                      ? "w-full h-full  visible opacity-100"
                       : "w-0 h-0 invisible opacity-0 "
                   }`}
                 src={img}

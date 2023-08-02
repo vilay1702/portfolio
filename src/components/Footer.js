@@ -54,7 +54,7 @@ const Footer = () => {
   return (
     <footer
       className={` h-16 sticky bottom-0 flex z-50 items-center justify-between ${
-        theme === "light" ? "bg-white" : "bg-gray-900"
+        theme === "light" ? "bg-slate-50" : "bg-gray-900"
       }`}
     >
       {theme === "light" ? darkThemeIcon : lightThemeIcon}

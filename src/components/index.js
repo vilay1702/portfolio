@@ -8,6 +8,7 @@ import PoR from "./PoR";
 import Contact from "./Contact";
 import Header from "./Header";
 import Footer from "./Footer";
+import Loader from "./Loader";
 
 export {
   Home,
@@ -20,4 +21,5 @@ export {
   Contact,
   Header,
   Footer,
+  Loader,
 };
