@@ -8,7 +8,7 @@ const Card = ({ data }) => {
   return (
     <section
       data-aos="fade-up"
-      className={`shadow-md border-l-4 h-max mx-auto my-2 px-2 sm:m-4 py-1 rounded sm:w-96 w-80 ${
+      className={`shadow-md border-l-4 h-max mx-auto my-2 sm:m-6 p-4 rounded sm:w-96 w-80 text-justify ${
         theme === "light"
           ? "bg-slate-100 border-indigo-900 hover:bg-slate-200"
           : "bg-gray-800 border-indigo-400 hover:bg-gray-700"

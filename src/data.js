@@ -27,18 +27,25 @@ export const education = [
 // Experience
 export const experience = [
   {
-    role: "Web Developer Intern",
+    role: "Full Stack Developer",
+    oranisation: "Easyops",
+    duration: "May'23 - present",
+    experience:
+      "Developed online menu app interface for managing restaurant menus with the help of Chakra UI.Custom item cart: manage and store customized menu items for smooth ordering",
+  },
+  {
+    role: "Full Stack Developer Intern",
     oranisation: "Descrii.tech",
     duration: "Nov'21 - Mar'22",
     experience:
-      "Worked as a Shopify Developer and developed Shopify Apps.Worked on MERN stack, Shopify API, Shopify Polaris",
+      "As a Shopify Developer, built custom Shopify apps to optimize client experience and streamline operations.Created customizable tab and accordion components using Liquid and CSS, with 4 types of predefined options",
   },
   {
     role: "Software Developer Intern",
     oranisation: "MADIEE Games",
     duration: "July'21 - Sept'21",
     experience:
-      "Responsible for developing engaging User Interface(UI) for web-based games.Worked on React JS",
+      "Responsible for developing engaging User Interface(UI) for web-based games.Utilized Socket IO to seamlessly integrate the front-end and back-end systems for real-time communication",
   },
 ];
 
