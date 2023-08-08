@@ -7,7 +7,6 @@ html {
 }
 ::-webkit-scrollbar {
   width: 3px;
-  height: 4px;
   background: #acacac;
 }
 ::-webkit-scrollbar-thumb {
@@ -16,13 +15,14 @@ html {
 
 .projects-scrollbar::-webkit-scrollbar {
   box-sizing: border-box;
-  height: 10px;
+  height: 10px !important;
   background:#1f2937;
 }
 
 .projects-scrollbar::-webkit-scrollbar-thumb {
   background: #4b47c8;
 }
+
 
 .line-animation {
   width: 100%;

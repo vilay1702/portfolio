@@ -8,7 +8,7 @@ const Card = ({ name, techStack, code, live, img }, index) => {
   return (
     <div
       key={index}
-      className={`w-60 rounded m-6  p-2 ${
+      className={`w-60 rounded mx-6 my-10 p-2 ${
         theme === "light"
           ? "bg-gray-400 hover:bg-gray-800"
           : "bg-gray-600 hover:bg-gray-400"
@@ -102,7 +102,7 @@ const Projects = () => {
       </section>
       <section
         className={`projects-scrollbar mt-10 mb-20 flex md:w-9/12 w-10/12 mx-auto overflow-x-scroll ${
-          theme === "light" ? "bg-slate-50" : "bg-gray-900"
+          theme === "light" ? "bg-slate-100" : "bg-gray-800"
         }`}
       >
         {projectsList.map((item, index) => (

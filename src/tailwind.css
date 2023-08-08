@@ -502,10 +502,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
 .m-1 {
   margin: 0.25rem;
 }
@@ -562,6 +558,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mt-16 {
@@ -982,6 +988,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1278,7 +1294,6 @@ html {
 
 ::-webkit-scrollbar {
   width: 3px;
-  height: 4px;
   background: #acacac;
 }
 
@@ -1288,7 +1303,7 @@ html {
 
 .projects-scrollbar::-webkit-scrollbar {
   box-sizing: border-box;
-  height: 10px;
+  height: 10px !important;
   background:#1f2937;
 }
 
@@ -1414,6 +1429,11 @@ html {
 .hover\:bg-gray-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .hover\:text-indigo-600:hover {

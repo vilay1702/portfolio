@@ -10,7 +10,7 @@ const Card = ({ data }) => {
       data-aos="fade-up"
       className={`shadow-md border-l-4 h-max mx-auto my-2 px-2 sm:m-4 py-1 rounded sm:w-96 w-80 ${
         theme === "light"
-          ? "bg-gray-100 border-indigo-900 hover:bg-gray-200"
+          ? "bg-slate-100 border-indigo-900 hover:bg-slate-200"
           : "bg-gray-800 border-indigo-400 hover:bg-gray-700"
       }`}
     >
