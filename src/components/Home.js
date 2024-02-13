@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Typed from "react-typed";
-import DP from "../images/profile_pic.WebP";
+import DP from "../images/profile_pic.jpeg";
 import { ThemeContext } from "../ThemeContext";
 
 const roles = ["Web Developer", "Competitive Programmer", "Web Designer"];
