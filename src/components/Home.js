@@ -3,7 +3,11 @@ import Typed from "react-typed";
 import DP from "../images/profile_pic.jpeg";
 import { ThemeContext } from "../ThemeContext";
 
-const roles = ["Web Developer", "Competitive Programmer", "Web Designer"];
+const roles = [
+  "Full-stack Developer",
+  "ShOpify Developer",
+  "Software Developer",
+];
 const name = "Vilay Bende".split("");
 
 const Home = () => {
@@ -65,21 +69,20 @@ const Home = () => {
             <span className="font-mono text-indigo-600 font-bold text-4xl mx-4">
               "
             </span>
-            As a full-stack web developer, I have a solid foundation in
-            front-end technologies like React.js, back-end technologies like
-            Node.js and Express.js, and databases like MongoDB and SQL. With
-            internships at startups, I have hands-on experience in developing
-            user interfaces and have worked as a Shopify developer, building
-            Shopify apps. I have also completed projects on the MERN stack,
-            showcasing my skills in building end-to-end web applications.
-            Proficient in programming languages like C++, Python, and
-            JavaScript, I am skilled in version control using Git.
+            A passionate Fullstack Developer with expertise in building dynamic
+            and responsive web applications using the MERN stack (MongoDB,
+            Express.js, React.js, Node.js). I specialize in creating efficient,
+            scalable solutions and have experience working with Shopify APIs,
+            developing web apps for e-commerce merchants.
             <br />
-            As a team player with problem solving abilities, I am committed to
-            delivering high-quality results and contributing to the success of
-            any project.
+            With a strong foundation in JavaScript, React.js, and Node.js, I’ve
+            contributed to multiple projects, ranging from e-commerce platforms
+            to interactive web-based games. I love solving complex problems,
+            optimizing code, and continually learning about new technologies to
+            stay ahead in the rapidly evolving tech space.
             <br />
-            Actively looking to work on real world projects.
+            When I'm not coding, I’m often diving into open-source contributions
+            or experimenting with new tools to enhance my skills.
             <span className="font-mono text-indigo-600 font-bold text-4xl mx-4">
               "
             </span>
