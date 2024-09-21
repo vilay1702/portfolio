@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bb7a8a94.chunk.css",
-    "main.js": "/portfolio/static/js/main.2960fe3d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2960fe3d.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.5a7d15af.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5a7d15af.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -20,7 +20,7 @@
     "static/media/certificate_problem_solving.08d29e9f.WebP": "/portfolio/static/media/certificate_problem_solving.08d29e9f.WebP",
     "static/media/certificate_python.79112c35.WebP": "/portfolio/static/media/certificate_python.79112c35.WebP",
     "static/media/certificate_python_hackerrank.54832d7f.WebP": "/portfolio/static/media/certificate_python_hackerrank.54832d7f.WebP",
-    "static/media/profile_pic.bddef1e1.WebP": "/portfolio/static/media/profile_pic.bddef1e1.WebP",
+    "static/media/profile_pic.021764bb.jpeg": "/portfolio/static/media/profile_pic.021764bb.jpeg",
     "static/media/project.00da84c6.WebP": "/portfolio/static/media/project.00da84c6.WebP",
     "static/media/project_custom.85ae5073.WebP": "/portfolio/static/media/project_custom.85ae5073.WebP",
     "static/media/project_github.f04a7ddc.WebP": "/portfolio/static/media/project_github.f04a7ddc.WebP",
@@ -33,6 +33,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.63b7d2f2.chunk.js",
     "static/css/main.bb7a8a94.chunk.css",
-    "static/js/main.2960fe3d.chunk.js"
+    "static/js/main.5a7d15af.chunk.js"
   ]
 }
