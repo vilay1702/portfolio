@@ -5,7 +5,7 @@ import { ThemeContext } from "../ThemeContext";
 
 const roles = [
   "Full-stack Developer",
-  "ShOpify Developer",
+  "Shopify Developer",
   "Software Developer",
 ];
 const name = "Vilay Bende".split("");
@@ -74,6 +74,7 @@ const Home = () => {
             Express.js, React.js, Node.js). I specialize in creating efficient,
             scalable solutions and have experience working with Shopify APIs,
             developing web apps for e-commerce merchants.
+            <br />
             <br />
             With a strong foundation in JavaScript, React.js, and Node.js, I’ve
             contributed to multiple projects, ranging from e-commerce platforms
