@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import {
+  Home,
+  Skills,
+  Education,
+  Experience,
+  PoR,
+  Projects,
+  Certificates,
+  Contact,
+  Header,
+  Footer,
+} from "./components";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ThemeContext, ThemeProvider } from "./ThemeContext";
 
-function App() {
+const App = () => {
+  const { theme } = useContext(ThemeContext)!;
+
+  React.useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div
+        className={`min-h-screen ${
+          theme === "light"
+            ? "bg-slate-50 text-gray-900"
+            : "bg-gray-900 text-white"
+        }`}
+      >
+        <Header />
+        <Home />
+        <Skills />
+        <Education />
+        <Experience />
+        <PoR />
+        <Projects />
+        <Certificates />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
-}
+};
 
-export default App;
+const AppWrapper = () => {
+  return (
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  );
+};
+
+export default AppWrapper;
