@@ -63,8 +63,8 @@ const Card: React.FC<CardProps> = ({
               key={techIndex}
               className={`px-2 py-1 sm:px-3 sm:py-1 lg:px-4 lg:py-2 rounded text-xs sm:text-sm font-medium transition-all duration-300 ${
                 theme === "light"
-                  ? "bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 hover:from-indigo-200 hover:to-purple-200 border border-indigo-200"
-                  : "bg-gradient-to-r from-indigo-900 to-purple-900 text-indigo-200 hover:from-indigo-800 hover:to-purple-800 border border-indigo-700"
+                  ? "bg-indigo-600 text-white hover:from-indigo-200 hover:to-purple-200 border border-indigo-200"
+                  : "bg-indigo-600 text-white hover:from-indigo-800 hover:to-purple-800 border border-indigo-700"
               }`}
             >
               {item}
@@ -157,7 +157,7 @@ const Projects = () => {
   const { theme } = useContext(ThemeContext)!;
 
   return (
-    <section id="works" className="font-mono px-4 sm:px-6 lg:px-8 relative">
+    <section id="works" className="font-mono relative">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div
@@ -171,7 +171,7 @@ const Projects = () => {
       <section>
         <div className="flex justify-between items-center mb-8 sm:mb-12 lg:mb-16">
           <div
-            className={`w-4 h-px ${
+            className={`w-7 h-px ${
               theme === "light" ? "bg-gray-900" : "bg-gray-100"
             }`}
           ></div>
@@ -191,19 +191,21 @@ const Projects = () => {
       </section>
 
       {/* Projects Grid */}
-      <section
-        className={`projects-scrollbar mt-8 sm:mt-12 lg:mt-16 mb-12 sm:mb-16 lg:mb-20 flex w-full mx-auto overflow-x-scroll ${
-          theme === "light"
-            ? "bg-gradient-to-r from-slate-50 to-gray-100"
-            : "bg-gradient-to-r from-gray-800 to-gray-900"
-        }`}
-      >
-        <div className="flex gap-6 sm:gap-8 lg:gap-10 px-6 sm:px-8 lg:px-10 py-6 sm:py-8 lg:py-10 min-w-max">
-          {PROJECTS.map((item, index) => (
-            <Card {...item} key={index} index={index} />
-          ))}
-        </div>
-      </section>
+      <div className="px-4 sm:px-6 lg:px-8">
+        <section
+          className={`projects-scrollbar mt-8 sm:mt-12 lg:mt-16 mb-12 sm:mb-16 lg:mb-20 flex w-full mx-auto overflow-x-scroll ${
+            theme === "light"
+              ? "bg-gradient-to-r from-slate-50 to-gray-100"
+              : "bg-gradient-to-r from-gray-800 to-gray-900"
+          }`}
+        >
+          <div className="flex gap-6 sm:gap-8 lg:gap-10 px-6 sm:px-8 lg:px-10 py-6 sm:py-8 lg:py-10 min-w-max">
+            {PROJECTS.map((item, index) => (
+              <Card {...item} key={index} index={index} />
+            ))}
+          </div>
+        </section>
+      </div>
     </section>
   );
 };

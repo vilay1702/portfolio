@@ -82,12 +82,12 @@ const Certificates = () => {
   const { theme } = useContext(ThemeContext)!;
 
   return (
-    <section id="certificates" className="font-mono px-4 sm:px-6 lg:px-8">
+    <section id="certificates" className="font-mono">
       {/* Certificates Header */}
       <section>
         <div className="flex justify-between items-center mb-8 sm:mb-12 lg:mb-16">
           <div
-            className={`w-4 h-px ${
+            className={`w-7 h-px ${
               theme === "light" ? "bg-gray-900" : "bg-gray-100"
             }`}
           ></div>
@@ -107,7 +107,7 @@ const Certificates = () => {
       </section>
 
       {/* Certificates Carousel */}
-      <div className="mt-8 sm:mt-12 lg:mt-16">
+      <div className="mt-8 sm:mt-12 lg:mt-16  px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <Carousel arr={certificates.map((cert) => cert.image)} />
         </div>

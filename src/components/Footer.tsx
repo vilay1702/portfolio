@@ -35,7 +35,7 @@ const Footer = () => {
 
   const darkThemeIcon = (
     <div
-      className="bg-gradient-to-r from-white to-gray-100 flex items-center ml-1 text-gray-900 rounded-r-3xl cursor-pointer px-2 sm:px-3 py-1 sm:py-2 transition-all duration-200 hover:shadow-lg hover:scale-105"
+      className="flex items-center ml-1 text-gray-900 rounded-r-3xl cursor-pointer px-2 sm:px-3 py-1 sm:py-2 transition-all duration-200 hover:shadow-lg hover:scale-105"
       onClick={() => toggleTheme()}
     >
       <i className="text-lg sm:text-xl fas fa-moon"></i>
@@ -44,7 +44,7 @@ const Footer = () => {
   );
   const lightThemeIcon = (
     <div
-      className="bg-gradient-to-r from-gray-800 to-gray-900 flex items-center ml-1 text-white rounded-r-3xl cursor-pointer px-2 sm:px-3 py-1 sm:py-2 transition-all duration-200 hover:shadow-lg hover:scale-105"
+      className=" flex items-center ml-1 text-white rounded-r-3xl cursor-pointer px-2 sm:px-3 py-1 sm:py-2 transition-all duration-200 hover:shadow-lg hover:scale-105"
       onClick={() => toggleTheme()}
     >
       <i className="text-lg sm:text-xl fas fa-sun"></i>
@@ -53,7 +53,7 @@ const Footer = () => {
   );
   return (
     <footer
-      className={`h-16 sm:h-20 sticky bottom-0 flex z-50 items-center justify-between px-4 sm:px-6 lg:px-8 backdrop-blur-md border-t ${
+      className={`h-16 sm:h-20 sticky bottom-0 pr-4 flex z-50 items-center justify-between backdrop-blur-md border-t ${
         theme === "light"
           ? "bg-white/80 border-gray-200 shadow-lg"
           : "bg-gray-900/80 border-gray-700 shadow-lg"

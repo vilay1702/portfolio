@@ -76,7 +76,7 @@ const Contact = () => {
           ></div>
         </div>
         <h1
-          className={`font-serif text-lg sm:text-xl lg:text-2xl space-x-1 font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent`}
+          className={`font-serif text-lg sm:text-xl lg:text-2xl space-x-1 font-semibold text-white `}
         >
           Liked my portfolio?{" "}
           <span

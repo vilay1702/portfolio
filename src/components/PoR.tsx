@@ -95,7 +95,7 @@ const PoR = () => {
 
   return (
     <>
-      <section id="por" className="font-mono px-4 sm:px-6 lg:px-8 relative">
+      <section id="por" className="font-mono relative">
         {/* Background decoration */}
         <div className="absolute inset-0 -z-10">
           <div
@@ -109,7 +109,7 @@ const PoR = () => {
         <section>
           <div className="flex justify-between items-center mb-8 sm:mb-12 lg:mb-16">
             <div
-              className={`w-4 h-px ${
+              className={`w-7 h-px ${
                 theme === "light" ? "bg-gray-900" : "bg-gray-100"
               }`}
             ></div>
@@ -126,10 +126,12 @@ const PoR = () => {
               }`}
             ></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
-            {POSITION_OF_RESPONSIBILITY.map((data, index) => {
-              return <Card key={index} data={data} />;
-            })}
+          <div className="px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
+              {POSITION_OF_RESPONSIBILITY.map((data, index) => {
+                return <Card key={index} data={data} />;
+              })}
+            </div>
           </div>
         </section>
       </section>
