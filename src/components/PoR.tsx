@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
 import { POSITION_OF_RESPONSIBILITY } from "../data";
-import { PoRData } from "../interfaces/index";
+import { PoRData } from "../interfaces";
 
 interface CardProps {
   data: PoRData;

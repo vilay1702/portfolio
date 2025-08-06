@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
 import { EXPERIENCE } from "../data";
-import { ExperienceData } from "../interfaces/index";
+import { ExperienceData } from "../interfaces";
 
 interface CardProps {
   data: ExperienceData;

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
 import { EDUCATION } from "../data";
-import { EducationData } from "../interfaces/index";
+import { EducationData } from "../interfaces";
 
 interface CardProps {
   data: EducationData;

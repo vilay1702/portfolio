@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import project from "../images/project.WebP";
 import { ThemeContext } from "../ThemeContext";
 import { PROJECTS } from "../data";
-import { ProjectData } from "../interfaces/index";
+import { ProjectData } from "../interfaces";
 
 interface CardProps extends ProjectData {
   index: number;
