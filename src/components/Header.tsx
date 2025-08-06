@@ -3,7 +3,7 @@ import { ThemeContext } from "../ThemeContext";
 import { Bars3Icon as MenuIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext)!;
+  const { theme } = useContext(ThemeContext)!;
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
