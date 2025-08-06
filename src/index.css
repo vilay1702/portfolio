@@ -22,22 +22,62 @@ code {
     monospace;
 }
 
+/* Global scrollbar styling */
 ::-webkit-scrollbar {
-  width: 3px;
-  background: #acacac;
-}
-::-webkit-scrollbar-thumb {
-  background: #312e81;
+  width: 6px;
+  height: 6px;
+  background: #f1f5f9;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Dark theme scrollbar */
+.dark ::-webkit-scrollbar {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6366f1;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Projects scrollbar specific styling */
 .projects-scrollbar::-webkit-scrollbar {
   box-sizing: border-box;
-  height: 10px !important;
-  background:#1f2937;
+  height: 12px !important;
+  background: #f1f5f9;
 }
 
 .projects-scrollbar::-webkit-scrollbar-thumb {
-  background: #4b47c8;
+  background: #6366f1;
+  border-radius: 6px;
+}
+
+.projects-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Dark theme projects scrollbar */
+.dark .projects-scrollbar::-webkit-scrollbar {
+  background: #1f2937;
+}
+
+.dark .projects-scrollbar::-webkit-scrollbar-thumb {
+  background: #6366f1;
+}
+
+.dark .projects-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
 }
 
 .line-animation {
@@ -72,4 +112,25 @@ code {
   100% {
     transform: translateX(90%);
   }
+}
+
+/* Responsive container utilities */
+.container-responsive {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.section-spacing {
+  @apply py-8 sm:py-12 lg:py-16;
+}
+
+.card-spacing {
+  @apply p-4 sm:p-6 lg:p-8;
+}
+
+.text-responsive {
+  @apply text-sm sm:text-base lg:text-lg;
+}
+
+.heading-responsive {
+  @apply text-2xl sm:text-3xl lg:text-4xl xl:text-5xl;
 }

@@ -5,20 +5,40 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ arr }) => {
-  const [current, setCurrent] = useState(0);
-  setInterval(() => {}, 5000);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerView = 1;
+
+  const nextImages = () => {
+    if (currentIndex + 1 < arr.length) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const prevImages = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const getVisibleImages = () => {
+    return arr.slice(currentIndex, currentIndex + itemsPerView);
+  };
+
+  const canGoNext = currentIndex + 1 < arr.length;
+  const canGoPrev = currentIndex > 0;
+
   return (
-    <section className="my-8">
-      <section className="mx-auto items-center flex  md:w-7/12 w-11/12">
-        <p
-          className="z-10 cursor-pointer slide-left bg-gray-900 p-1"
-          onClick={() =>
-            setCurrent(current === 0 ? arr.length - 1 : current - 1)
-          }
+    <section className="my-8 sm:my-12 lg:my-16">
+      <section className="mx-auto items-center flex w-full px-4 sm:px-6 lg:px-8">
+        <button
+          className={`z-10 cursor-pointer slide-left bg-gray-900/80 backdrop-blur-sm p-2 sm:p-3 rounded-full hover:bg-gray-800 transition-all duration-300 hover:scale-110 ${
+            !canGoPrev ? "pointer-events-none opacity-30" : ""
+          }`}
+          onClick={prevImages}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="sm:h-10 sm:w-10 h-5 w-5"
+            className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8"
             viewBox="0 0 20 20"
             fill="white"
           >
@@ -28,33 +48,45 @@ const Carousel: React.FC<CarouselProps> = ({ arr }) => {
               clipRule="evenodd"
             />
           </svg>
-        </p>
-        <div className="">
-          {arr.map((img, index) => {
-            return (
-              <img
-                key={index}
-                className={`object-cover object-center transition-all duration-500 ease-in 
-                  ${
-                    index === current
-                      ? "w-full h-full  visible opacity-100"
-                      : "w-0 h-0 invisible opacity-0 "
-                  }`}
-                src={img}
-                alt="img"
+        </button>
+
+        <div className="flex-1 flex justify-center items-center px-4 sm:px-6 lg:px-8">
+          {getVisibleImages().map((img, index) => (
+            <div
+              key={`${currentIndex}-${index}`}
+              className="max-w-xs sm:max-w-md lg:max-w-2xl h-64 sm:h-80 lg:h-96 flex items-center justify-center relative overflow-hidden rounded-md shadow-2xl transition-all duration-500 ease-out hover:scale-105"
+            >
+              {/* Blurred Background */}
+              <div
+                className="absolute inset-0 bg-cover bg-center blur-sm scale-110"
+                style={{ backgroundImage: `url(${img})` }}
               />
-            );
-          })}
+
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+
+              {/* Main Image */}
+              <img
+                className="relative z-10 object-contain w-full h-full transition-all duration-500 ease-out hover:scale-110 hover:brightness-110"
+                src={img}
+                alt={`Certificate ${currentIndex + index + 1}`}
+              />
+
+              {/* Glow Effect */}
+              <div className="absolute inset-0 rounded-2xl shadow-[0_0_30px_rgba(99,102,241,0.3)] opacity-0 hover:opacity-100 transition-opacity duration-500" />
+            </div>
+          ))}
         </div>
-        <p
-          className="z-10 cursor-pointer slide-right bg-gray-900 p-1"
-          onClick={() =>
-            setCurrent(current === arr.length - 1 ? 0 : current + 1)
-          }
+
+        <button
+          className={`z-10 cursor-pointer slide-right bg-gray-900/80 backdrop-blur-sm p-2 sm:p-3 rounded-full hover:bg-gray-800 transition-all duration-300 hover:scale-110 ${
+            !canGoNext ? "pointer-events-none opacity-30" : ""
+          }`}
+          onClick={nextImages}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="sm:h-10 sm:w-10 h-5 w-5"
+            className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8"
             viewBox="0 0 20 20"
             fill="white"
           >
@@ -69,23 +101,23 @@ const Carousel: React.FC<CarouselProps> = ({ arr }) => {
               clipRule="evenodd"
             />
           </svg>
-        </p>
+        </button>
       </section>
-      <div className="my-4 w-max mx-auto flex items-center">
-        {Array(arr.length)
-          .fill(0)
-          .map((item, index) => {
-            return (
-              <div
-                key={index}
-                onClick={() => setCurrent(index)}
-                className={`w-4 h-1 cursor-pointer hover:bg-indigo-900 mx-1 ${
-                  index === current ? "bg-indigo-900" : "bg-gray-200"
-                }`}
-              ></div>
-            );
-          })}
-      </div>
+      <section
+        className={
+          "my-6 sm:my-8 lg:my-10 flex justify-center items-center gap-2 sm:gap-3 lg:gap-4"
+        }
+      >
+        {Array.from({ length: arr.length }).map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-1 sm:w-4 sm:h-1 lg:w-5 lg:h-1.5 bg-indigo-600 cursor-pointer rounded-full transition-all duration-300 ${
+              currentIndex === index ? "bg-indigo-600" : "bg-gray-300"
+            }`}
+            onClick={() => setCurrentIndex(index)}
+          ></div>
+        ))}
+      </section>
     </section>
   );
 };

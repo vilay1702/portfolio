@@ -133,7 +133,7 @@ export const PROJECTS: ProjectData[] = [
   },
   {
     name: "Notes App",
-    techStack: ["PHP", "Javascript", "HTML", "CSS", "MySQL"],
+    techStack: ["PHP", "HTML", "CSS", "MySQL"],
     code: "https://github.com/vilay1702/NotesApp",
     live: null,
     img: null,
