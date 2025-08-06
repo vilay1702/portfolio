@@ -17,8 +17,8 @@ const Home = () => {
   return (
     <>
       <section id="home" className="font-mono min-h-screen">
-        <section className="mt-4 ml-4">
-          <div className="flex sm:flex-row flex-col items-center">
+        <section className="mt-4 px-4 flex flex-col items-center sm:items-start">
+          <div className="flex sm:flex-row flex-col items-center justify-center sm:justify-start w-full">
             <div
               className="ml-8 aos-init aos-animate"
               data-aos="flip-left"
@@ -48,9 +48,9 @@ const Home = () => {
                 </div>
               )}
             </div>
-            <section className="ml-4 sm:ml-10 mb-12 sm:w-max">
+            <section className="sm:ml-10 mb-12 sm:w-max text-center sm:text-left">
               <h1
-                className={`font-serif text-8xl mt-12 ${
+                className={`font-serif text-4xl sm:text-6xl lg:text-8xl mt-8 sm:mt-12 ${
                   theme === "light" ? "text-gray-900" : "text-white"
                 }`}
               >
@@ -65,11 +65,11 @@ const Home = () => {
               </h3>
               <div className="mt-2 lg:mt-6">
                 <div
-                  className={`h-16 -mb-20 ml-4 -mr-4 hidden lg:block ${
+                  className={`h-16 -mb-20 sm:ml-4 -mr-4 hidden lg:block ${
                     theme === "light" ? "bg-gray-800" : "bg-gray-700"
                   }`}
                 ></div>
-                <h1 className="h-16 lg:mt-0 text-xl sm:text-2xl text-white font-bold bg-gradient-to-r from-indigo-700 to-indigo-500 p-4">
+                <h1 className="h-16 lg:mt-0 text-lg sm:text-xl lg:text-2xl text-white font-bold bg-gradient-to-r from-indigo-700 to-indigo-500 p-4">
                   <span className="transition-all duration-500">
                     <span className="">
                       <TypingEffect
@@ -85,7 +85,7 @@ const Home = () => {
             </section>
           </div>
           <p
-            className={`px-6 sm:ml-4 w-screen sm:w-10/12 text-justify ${
+            className={`px-4 sm:px-6 sm:ml-4 w-full max-w-4xl text-center sm:text-left ${
               theme === "light" ? "text-gray-800" : "text-gray-200"
             }`}
           >
