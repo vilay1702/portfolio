@@ -24,13 +24,14 @@ const Header = () => {
   };
 
   return (
-    <nav
+    <nav className={`z-50 sticky top-0 backdrop-blur-md `}>
+      {/* <nav
       className={`z-50 sticky top-0 backdrop-blur-md border-b ${
         theme === "light"
           ? "bg-white/80 border-gray-200 shadow-lg"
           : "bg-gray-900/80 border-gray-700 shadow-lg"
       }`}
-    >
+    > */}
       <div className="pl-4 sm:pl-6 lg:pl-8">
         <div className="relative flex items-center justify-between h-16 sm:h-20">
           <div className="flex items-center sm:hidden">

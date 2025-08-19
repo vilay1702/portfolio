@@ -53,12 +53,15 @@ const Footer = () => {
   );
   return (
     <footer
+      className={`h-16 sm:h-20 sticky bottom-0 pr-4 flex z-50 items-center justify-between backdrop-blur-md`}
+    >
+      {/* <footer
       className={`h-16 sm:h-20 sticky bottom-0 pr-4 flex z-50 items-center justify-between backdrop-blur-md border-t ${
         theme === "light"
           ? "bg-white/80 border-gray-200 shadow-lg"
           : "bg-gray-900/80 border-gray-700 shadow-lg"
       }`}
-    >
+    > */}
       {theme === "light" ? darkThemeIcon : lightThemeIcon}
       <div
         className={`flex-1 h-px mx-2 sm:mx-4 lg:mx-6 ${
