@@ -28,7 +28,7 @@ export interface PoRData {
 export interface ProjectData {
   name: string;
   techStack: string[];
-  code: string;
+  code: string | null;
   live: string | null;
   img: string | null;
 }
