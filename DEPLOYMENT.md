@@ -55,26 +55,59 @@ git push origin main
 
 ## 📱 Access Your Site
 
-After successful deployment, your portfolio will be available at:
+After successful deployment, your portfolio is available at:
 
 ```
-https://[your-username].github.io/[repository-name]
+https://vilaybende.com
 ```
 
-**Example:** `https://vilay1702.github.io/vilay-portfolio`
+## 🌐 Custom Domain (vilaybende.com)
+
+The `public/CNAME` file tells GitHub Pages to serve the build on `vilaybende.com`. To finish wiring it up:
+
+### 1. DNS records (at your registrar)
+
+For the **apex** (`vilaybende.com`), add four `A` records pointing to GitHub's Pages IPs:
+
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+(Optional but recommended — add AAAA records for IPv6:)
+
+```
+2606:50c0:8000::153
+2606:50c0:8001::153
+2606:50c0:8002::153
+2606:50c0:8003::153
+```
+
+For the **www subdomain** (`www.vilaybende.com`), add a `CNAME` record pointing to:
+
+```
+vilay1702.github.io
+```
+
+### 2. Configure in GitHub
+
+1. Repository → **Settings** → **Pages**
+2. Under **Custom domain**, enter `vilaybende.com` and save
+3. Wait for the DNS check to go green (can take a few minutes up to 24h)
+4. Tick **Enforce HTTPS** once the certificate is issued
 
 ## 🔍 Troubleshooting
 
 ### Common Issues:
 
 1. **Build Fails**
-
    - Check if all dependencies are in `package.json`
    - Ensure `npm run build` works locally
    - Review GitHub Actions logs
 
 2. **Page Not Found**
-
    - Verify GitHub Pages is enabled
    - Check if deployment completed successfully
    - Wait a few minutes for DNS propagation
@@ -124,4 +157,4 @@ The workflow includes:
 
 ---
 
-🎉 **Your portfolio will be live at:** `https://[username].github.io/[repo-name]`
+🎉 **Your portfolio is live at:** `https://vilaybende.com`
